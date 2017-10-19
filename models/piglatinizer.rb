@@ -30,7 +30,7 @@ p = PigLatinizer.new
 
 puts p.piglatinize("pork")
 
-#my solution that works but is not speced to tests. 
+#my solution that works but is not speced to tests.
 
 #class PigLatinizer
   #attr_accessor :phrase
