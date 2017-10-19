@@ -2,6 +2,10 @@ class Piglatinizer
   attr_reader :phrase
 
   def initialize(phrase)
+    @phrase = phrase
+  end
+
+  def piglatinize(phrase)
     phrase_array = phrase.split(" ")
     phrase_array.map! do |w|
       if w.chars.first.match(/[AaEeIiOoUu]/) != nil
@@ -16,5 +20,4 @@ class Piglatinizer
     "#{phrase_to_print}"
   end
 
-  
 end
