@@ -4,7 +4,7 @@ class Piglatinizer
   def initialize(phrase)
     phrase_array = phrase.split(" ")
     phrase_array.map do |w|
-      if w.chars.first.match(/[AaEeIiOoUu]) != nil
+      if w.chars.first.match(/[AaEeIiOoUu]/) != nil
         "#{w}way"
       else
         wn = w.reverse
