@@ -1,3 +1,5 @@
+#solution on master class with my modifications on lines 7, 10, 11, 13
+
 class PigLatinizer
 
   def piglatinize(word)
@@ -5,10 +7,10 @@ class PigLatinizer
     #non_pig_latin_words = ["i", "me", "to", "too", "a", "an", "in", "and", "on"]
     vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
 
-    #if non_pig_latin_words.include?(word)
+    #if non_pig_latin_words.include?(word) [this rule is invalid, commented out]
       #word
     if vowels.include? word[0]
-      word << "way"
+      word << "way" #should push in 'way' not 'ay' as in the original code
     else
       consonants = ""
       while !vowels.include?(word[0])
