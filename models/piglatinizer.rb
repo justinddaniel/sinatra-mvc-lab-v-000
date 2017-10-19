@@ -3,8 +3,9 @@ class Piglatinizer
   attr_reader :phrase
 
   def initialize(phrase)
-    binding.pry
     phrase_array = phrase.split(" ")
+    phrase_array.map do |w|
+      binding.pry
     
   end
 
