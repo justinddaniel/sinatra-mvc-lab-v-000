@@ -13,7 +13,6 @@ class Piglatinizer
       end
     end
     phrase_to_print = phrase_array.join(" ")
-    
   end
 
   "#{phrase_to_print}"
