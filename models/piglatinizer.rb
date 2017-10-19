@@ -6,7 +6,8 @@ class Piglatinizer
     phrase_array = phrase.split(" ")
     phrase_array.map do |w|
       binding.pry
-    
+    end
+
   end
 
 
