@@ -10,6 +10,7 @@ class Piglatinizer
         wn = w.reverse
         wnp = wn[0..-2].reverse + wn[-1]
         "#{wnp}ay"
+      end
     end
 
   end
