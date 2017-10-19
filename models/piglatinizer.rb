@@ -5,7 +5,7 @@ class PigLatinizer
     @phrase = phrase
   end
 
-  def piglatinize
+  def piglatinize(phrase)
     phrase_array = self.phrase.split(" ")
     phrase_array.map! do |w|
       if w.chars.first.match(/[AaEeIiOoUu]/) != nil
