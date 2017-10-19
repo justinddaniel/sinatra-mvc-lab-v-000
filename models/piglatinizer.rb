@@ -12,7 +12,8 @@ class Piglatinizer
         "#{wnp}ay"
       end
     end
-    phrase_array.join(" ")
+    phrase_to_print = phrase_array.join(" ")
+    "#{phrase_to_print}"
   end
 
 
