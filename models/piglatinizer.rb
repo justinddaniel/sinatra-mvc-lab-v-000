@@ -3,7 +3,7 @@ class Piglatinizer
 
   def initialize(phrase)
     phrase_array = phrase.split(" ")
-    phrase_array.map do |w|
+    phrase_array.map! do |w|
       if w.chars.first.match(/[AaEeIiOoUu]/) != nil
         "#{w}way"
       else
@@ -12,7 +12,7 @@ class Piglatinizer
         "#{wnp}ay"
       end
     end
-
+    phrase_array.join(" ")
   end
 
 
